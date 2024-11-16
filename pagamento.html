@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="confDicas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">New Power</a>
+        <ul>
+            <li><a href="index.html" onclick="toggle()">Home</a></li>
+
+
+
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Formas de Pagamento</h3>
+                <h2>Pagamento via Pix</h2>
+                <p>O Pix é ideal para pagamentos rápidos e simples.
+                </p>
+                <h4>Como Funciona?</h4>
+                <p>•Após o orçamento aprovado, fornecemos nossa chave Pix ou QR Code para realizar o pagamento.</p>
+                <p>•O pagamento é confirmado na hora, permitindo que iniciemos ou concluamos os serviços imediatamente.</p>
+                <h4>Vantagens do Pix</h4>
+                <p>•Confirmação instantânea.</p>
+                <p>•Sem taxas adicionais.</p>
+                <p>•Disponível a qualquer momento, todos os dias.</p>
+                </p>
+                <h2>Cartão de Crédito</h2>
+                <p>Aceitamos os principais cartões de crédito para facilitar o pagamento dos serviços.</p>
+                <h4>Como Funciona?</h4>
+                <p>•Nos informe que deseja pagar com cartão de crédito.</p>
+                <p>•Realize o pagamento diretamente no nosso terminal de pagamento</p>
+                <h4>Vantagens do Cartão de Crédito</h4>
+                <p>•Opção de parcelamento</p>
+                <p>•Conveniência e segurança.</p>
+                <p>•Ideal para serviços mais complexos ou de alto valor.</p>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    </header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function toggle() {
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="nossaHistoria.html">Sobre Nós</a></li>
+                        <li><a href="#">Conquistas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Formas de Pagamento</a>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="revisaoPrev.html">Revisão Preventiva</a></li>
+                        <li><a href="suspensao.html">Suspensão</a></li>
+                        <li><a href="freios.html">Freios</a></li>
+                        <li><a href="injecaoElo.html">Injeção Eletrônica</a></li>
+                        <li><a href="trocaDeOleo.html">Troca de Óleo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos Acompanhe</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/newpowermecanica/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

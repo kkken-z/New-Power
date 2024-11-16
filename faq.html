@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="confDicas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">New Power</a>
+        <ul>
+            <li><a href="index.html" onclick="toggle()">Home</a></li>
+
+
+
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>FAQ</h3>
+                <h4>Como Trabalhamos?</h4>
+                <p>Agendamos uma avaliação do veículo para que possamos verificar e identificar com precisão quaisquer
+                    problemas que precisem ser reparados ou peças que precisem ser substituídas. Esse processo nos
+                    permite oferecer um diagnóstico preciso e um orçamento justo, garantindo que o reparo seja realizado
+                    corretamente desde a primeira vez e que o veículo esteja em condições seguras para o proprietário
+                    usar novamente.
+                </p>
+                <h4>Parcelamento do Serviço Prestado</h4>
+                <p>Oferecemos a opção de parcelamento do pagamento por cartão de crédito para maior comodidade e
+                    flexibilidade aos nossos clientes</p>
+                <h4>Por que trabalhamos com serviço agendado?</h4>
+                <p>Agendamos o serviço para proporcionar um atendimento mais eficiente e de alta qualidade, evitando que
+                    o veículo fique parado à espera da prestação do serviço e causando transtornos ao cliente pela falta
+                    de transporte</p>
+            </div>
+        </div>
+    </section>
+
+    </header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function toggle() {
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="nossaHistoria.html">Sobre Nós</a></li>
+                        <li><a href="#">Conquistas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Formas de Pagamento</a>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="revisaoPrev.html">Revisão Preventiva</a></li>
+                        <li><a href="suspensao.html">Suspensão</a></li>
+                        <li><a href="freios.html">Freios</a></li>
+                        <li><a href="injecaoElo.html">Injeção Eletrônica</a></li>
+                        <li><a href="trocaDeOleo.html">Troca de Óleo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos Acompanhe</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/newpowermecanica/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="confDicas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">New Power</a>
+        <ul>
+            <li><a href="index.html" onclick="toggle()">Home</a></li>
+
+
+
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Freios</h3>
+                <p>O sistema de freios é, sem dúvida, um dos componentes mais críticos para a segurança de qualquer
+                    veículo. Ele é responsável por reduzir a velocidade e parar o carro de forma eficiente, garantindo
+                    que você possa reagir rapidamente em situações de emergência. Portanto, é essencial que o sistema de
+                    freios seja mantido em perfeitas condições para garantir uma frenagem segura e precisa, seja em
+                    trajetos urbanos ou em estradas mais desafiadoras.
+                </p>
+                <p>O sistema de freios é composto por diversas partes, incluindo as pastilhas, discos, tambores, fluido
+                    de freio e os cilindros. Com o tempo, esses componentes se desgastam devido ao uso constante, e isso
+                    pode afetar o desempenho do sistema. Pastilhas de freio gastas, por exemplo, podem diminuir a
+                    eficiência da frenagem e até mesmo danificar os discos de freio, o que resulta em custos mais altos
+                    de reparo.</p>
+                <p>Além do desgaste natural das peças, fatores como a qualidade do fluido de freio, a temperatura do
+                    sistema e o estilo de condução também podem influenciar a performance dos freios. Condução
+                    agressiva, como frenagens bruscas ou frequentes, pode acelerar o desgaste das pastilhas e reduzir a
+                    vida útil do sistema.</p>
+                <p>A manutenção regular dos freios é essencial não apenas para garantir uma frenagem eficiente, mas
+                    também para evitar falhas que possam colocar em risco a sua segurança e a de outros motoristas. A
+                    troca periódica das pastilhas de freio, a verificação do nível do fluido de freio e o monitoramento
+                    do estado dos discos são ações simples, mas que fazem toda a diferença na hora de evitar problemas
+                    mais graves.</p>
+                </p>
+                <p>Além disso, ficar atento a sinais de que algo não vai bem com os freios pode prevenir danos maiores.
+                    Ruídos estranhos, como um chiado ou rangido ao frear, pedal de freio duro ou mole, e vibrações
+                    incomuns durante a frenagem são indícios de que algo no sistema de freios pode estar comprometido e
+                    precisa ser revisado.</p>
+                <p>A revisão preventiva dos freios não é apenas uma questão de manutenção, mas uma questão de segurança.
+                    Portanto, é fundamental que você realize esse serviço regularmente e busque ajuda profissional ao
+                    perceber qualquer sinal de falha. Assim, você garante não apenas a sua segurança, mas também a
+                    tranquilidade de dirigir com confiança em qualquer situação.</p>
+            </div>
+        </div>
+    </section>
+
+    </header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function toggle() {
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="nossaHistoria.html">Sobre Nós</a></li>
+                        <li><a href="#">Conquistas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Formas de Pagamento</a>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="revisaoPrev.html">Revisão Preventiva</a></li>
+                        <li><a href="suspensao.html">Suspensão</a></li>
+                        <li><a href="freios.html">Freios</a></li>
+                        <li><a href="injecaoElo.html">Injeção Eletrônica</a></li>
+                        <li><a href="trocaDeOleo.html">Troca de Óleo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos Acompanhe</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/newpowermecanica/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

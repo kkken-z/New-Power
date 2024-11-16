@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="confDicas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">New Power</a>
+        <ul>
+            <li><a href="index.html" onclick="toggle()">Home</a></li>
+
+
+
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Revisão Preventiva</h3>
+                <p>A revisão preventiva é uma das melhores formas de garantir que o seu veículo permaneça em bom estado
+                    por mais tempo, evitando falhas inesperadas e mantendo a segurança e o conforto ao dirigir. Realizar
+                    esse tipo de manutenção regularmente ajuda a identificar problemas antes que se tornem grandes e
+                    caros, além de prevenir danos aos componentes do carro que podem comprometer o seu desempenho.
+                </p>
+                <p>Durante a revisão preventiva, são verificados vários sistemas essenciais do veículo, como motor,
+                    transmissão, suspensão, freios, pneus, iluminação e sistema elétrico. Esses componentes precisam
+                    estar em perfeito funcionamento para garantir que o carro não só tenha um desempenho ideal, mas
+                    também para proteger a segurança de quem está dentro dele e dos outros motoristas.</p>
+                <p>A revisão preventiva também pode aumentar a durabilidade do seu veículo, otimizando o consumo de
+                    combustível e melhorando o desempenho geral. Além disso, carros bem mantidos têm menor risco de
+                    parar inesperadamente e causar prejuízos com reparos urgentes.</p>
+                <p>Investir em uma revisão periódica não só evita que você tenha surpresas, como também contribui para
+                    um maior valor de revenda, caso decida vender o carro no futuro. Certifique-se de seguir as
+                    orientações do manual do fabricante e contar com profissionais qualificados para realizar a
+                    manutenção. Manter o seu veículo em dia é, sem dúvida, a melhor maneira de prolongar a vida útil e
+                    garantir a sua tranquilidade ao volante.</p>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    </header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function toggle() {
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="nossaHistoria.html">Sobre Nós</a></li>
+                        <li><a href="#">Conquistas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Formas de Pagamento</a>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="revisaoPrev.html">Revisão Preventiva</a></li>
+                        <li><a href="suspensao.html">Suspensão</a></li>
+                        <li><a href="freios.html">Freios</a></li>
+                        <li><a href="injecaoElo.html">Injeção Eletrônica</a></li>
+                        <li><a href="trocaDeOleo.html">Troca de Óleo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos Acompanhe</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/newpowermecanica/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

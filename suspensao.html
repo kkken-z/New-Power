@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="confDicas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">New Power</a>
+        <ul>
+            <li><a href="index.html" onclick="toggle()">Home</a></li>
+
+
+
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+
+    <section class="sec" id="about">
+        <div class="content">
+            <div class="mxw800p">
+                <h3>Suspensão</h3>
+                <p>A suspensão é um dos sistemas mais importantes para o bom desempenho e segurança do seu veículo. Ela
+                    é responsável por absorver os impactos das irregularidades do terreno, proporcionando uma condução
+                    mais suave e confortável, além de manter a estabilidade do carro durante o trajeto. Quando a
+                    suspensão está em boas condições, você sente a diferença no conforto ao dirigir e na segurança,
+                    especialmente em curvas e frenagens.
+                </p>
+                <p>Composta por diversos componentes como amortecedores, molas, buchas e barras estabilizadoras, a
+                    suspensão tem a função de manter os pneus em contato constante com o solo, o que é crucial para a
+                    estabilidade do veículo. Um sistema de suspensão bem calibrado também ajuda a garantir o desgaste
+                    uniforme dos pneus, evitando que se desgastem de forma desigual, o que pode afetar a aderência e o
+                    desempenho do veículo.</p>
+                <p>A manutenção da suspensão deve ser feita regularmente, já que os componentes dessa parte do carro são
+                    expostos a desgaste constante devido a fatores como a condição das vias, o peso do veículo e o
+                    estilo de condução. Amortecedores e molas desgastados podem afetar a capacidade do carro de absorver
+                    impactos e de manter a estabilidade, especialmente em frenagens bruscas ou ao passar por buracos e
+                    lombadas.</p>
+                <p>Além de melhorar o conforto e a segurança, uma suspensão bem mantida pode também impactar
+                    positivamente a dirigibilidade e o consumo de combustível. Isso ocorre porque, quando a suspensão
+                    não está funcionando corretamente, o carro pode ficar mais difícil de controlar, exigindo mais
+                    esforço do motorista e do motor para manter a velocidade e a estabilidade.</p>
+                </p>
+                <p>Para garantir que a suspensão do seu veículo esteja sempre em perfeito estado, é importante realizar
+                    verificações periódicas. Se você perceber que o carro está apresentando dificuldades em absorver
+                    impactos, se há ruídos estranhos, se a direção está mais rígida ou se o carro tende a "pular" mais
+                    do que o normal, pode ser sinal de que é hora de revisar o sistema de suspensão.</p>
+                <p>Investir em uma manutenção preventiva da suspensão é fundamental para a sua segurança e conforto ao
+                    dirigir. A equipe de profissionais qualificados estará pronta para realizar a revisão completa e
+                    garantir que o seu veículo esteja sempre pronto para enfrentar qualquer caminho com confiança.</p>
+            </div>
+        </div>
+    </section>
+
+    </header>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+        function toggle() {
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="nossaHistoria.html">Sobre Nós</a></li>
+                        <li><a href="#">Conquistas</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suporte</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Formas de Pagamento</a>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="revisaoPrev.html">Revisão Preventiva</a></li>
+                        <li><a href="suspensao.html">Suspensão</a></li>
+                        <li><a href="freios.html">Freios</a></li>
+                        <li><a href="injecaoElo.html">Injeção Eletrônica</a></li>
+                        <li><a href="trocaDeOleo.html">Troca de Óleo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nos Acompanhe</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/newpowermecanica/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
